@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.Frag_Home">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="-22sp"
+            app:cardCornerRadius="22sp">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                >
+                <ImageView
+                    android:id="@+id/Frag_Home_imgSky"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sky_am"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/boder_home"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100sp"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/Frag_Home_CardView_imgProFile"
+                        android:layout_width="90sp"
+                        android:layout_height="90sp"
+                        android:layout_marginLeft="9sp"
+                        app:cardCornerRadius="45sp"
+                        >
+                        <ImageView
+                            android:id="@+id/Frag_Home_imgProFile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/profile"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/Frag_Home_helloProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/Frag_Home_CardView_imgProFile"
+                        android:layout_marginLeft="12sp"
+                        android:text="@string/hello_Profile_AM"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/Frag_Home_nameProFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/Frag_Home_CardView_imgProFile"
+                        android:layout_below="@+id/Frag_Home_helloProfile"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="12sp"
+                        android:text="Admin"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/Frag_Home_roomProFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/Frag_Home_CardView_imgProFile"
+                        android:layout_below="@+id/Frag_Home_nameProFile"
+                        android:layout_marginLeft="12sp"
+                        android:padding="6sp"
+                        android:textSize="12sp"
+                        android:background="@drawable/boder_room"
+                        android:text="CT3-902"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_DA"/>
+                </RelativeLayout>
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_table"
+            android:layout_margin="12sp">
+
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_service"
+                    android:background="@drawable/boder_item"
+                    android:text="@string/home_Service"
+                    android:textColor="@color/color_DA"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_warning"
+                    android:background="@drawable/boder_item_waring"
+                    android:text="@string/home_EmergencyIncident"
+                    android:textColor="@color/waring"/>
+
+            </TableRow>
+
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_repair"
+                    android:background="@drawable/boder_item"
+                    android:text="@string/home_Repair"
+                    android:textColor="@color/color_DA"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Frag_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_news"
+                    android:background="@drawable/boder_item"
+                    android:text="@string/home_News"
+                    android:textColor="@color/color_DA"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_report"
+                    android:background="@drawable/boder_item"
+                    android:text="@string/home_reportService"
+                    android:textColor="@color/color_DA"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_history"
+                    android:background="@drawable/boder_item"
+                    android:text="@string/home_History"
+                    android:textColor="@color/color_DA"/>
+
+            </TableRow>
+
+            <TableRow>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Frag_home_Manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:gravity="center"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:padding="6sp"
+                    android:textSize="12sp"
+                    android:drawableTop="@drawable/ic_manager"
+                    android:background="@drawable/boder_item"
+                    android:text="@string/home_Manage_Admin"
+                    android:textColor="@color/color_DA"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Frag_home_statistical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_margin="9sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boder_item"
+                    android:drawableTop="@drawable/ic_statistical"
+                    android:gravity="center"
+                    android:padding="6sp"
+                    android:text="@string/home_Statistical_Admin"
+                    android:textColor="@color/color_DA"
+                    android:textSize="12sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/Frag_home_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9sp"
+            android:textSize="20sp"
+            android:text="@string/home_News"
+            android:textStyle="bold"
+            android:textColor="@color/color_DA"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/line"/>
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/Frag_home_ShimmerFrameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_news_load"/>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_news"
+            tools:itemCount="2"
+            android:layout_margin="9dp"
+            />
+    </LinearLayout>
+</ScrollView>

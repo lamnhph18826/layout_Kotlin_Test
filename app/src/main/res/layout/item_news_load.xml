@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/itemNews_news"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="125sp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        app:cardElevation="2sp"
+        app:cardCornerRadius="22sp"
+        android:layout_margin="6sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            >
+            <ImageView
+                android:id="@+id/itemNews_img"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:src="#B5B5B5"/>
+            <TextView
+                android:id="@+id/itemNews_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/itemNews_img"
+                android:layout_margin="12sp"
+                android:background="#B5B5B5"/>
+            <TextView
+                android:id="@+id/itemNews_message"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/itemNews_img"
+                android:layout_below="@+id/itemNews_title"
+                android:layout_marginLeft="12sp"
+                android:background="#B5B5B5"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
